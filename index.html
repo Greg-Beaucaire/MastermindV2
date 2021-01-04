@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>MASTERMIND</title>
+</head>
+<body>
+    <div class="animate__animated animate__fadeInLeft gauche" >
+        <h1>MASTER<span>MIND</span></h1>
+        <div class="regle">
+            <h2>fais pas genre tu connais pas les règles</h2>
+            <h3>mais dans le doute</h3>
+            <span></span>
+            <h3>5 chiffres compris entre 1 et 8</h3>
+            <span></span>
+            <h3>Vert - Bon chiffre bien placé</h3>
+            <h3>Orange - Bon chiffre mais mal placé</h3>
+            <h3>Rouge - Mauvais chiffre</h3>
+        </div>
+    </div>
+    <div class="animate__animated animate__fadeInRight jeu">
+        
+        <div class="prop">
+            <label for="proposition">Votre proposition</label>
+            <input type="number" name="proposition" id="proposition">
+            <button id="btn">GO</button>
+        </div>
+        
+        <div>
+            <p id="divReponse"></p>
+        </div>
+    </div>
+    <form class="animate__animated animate__bounceInUp" action="index.html">
+        <input type="hidden">
+        <button>REJOUER</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
